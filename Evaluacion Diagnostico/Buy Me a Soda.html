@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Buy Me A Soda</title>
+        <style>
+
+            * {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+
+            body {
+                background-color: rgb(236, 236, 236);
+            }
+
+            .Navbar {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                padding: 30px 10%;
+                background-color: rgb(184, 78, 78);
+                border-radius: 65px;
+                color: rgb(238, 238, 238);
+            }
+
+            .Navbar img{
+                cursor: pointer;
+            }
+
+            .Navbar img:hover{
+                opacity: 0.5;
+            }
+
+            .Navbar h2,button {
+                cursor: pointer;
+            }
+
+            .Navbar h2:hover,button:hover{
+                opacity: 0.5;
+            }
+
+            .Landing {
+                margin: 25px;
+                padding: 25px;
+                color: rgb(26, 26, 26);
+            }
+
+            .Landing h1 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+            }
+
+            .Landing h4 {
+                display: flex;
+                align-items: center;
+                justify-content: center; 
+                
+            }
+
+            .Inscripcion h2{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .Inscripcion h3{
+                align-items: center;
+                justify-content: center;
+                background-color: rgb(184, 78, 78) ;
+                border-radius: 45px;
+                color: rgb(238, 238, 238) ;
+                text-align: center;
+                width: min-content;
+            }
+
+            .Inscripcion h5{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .Categorias{
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+
+            .Ejemplos{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 25px;
+                padding: 5px;
+            }
+
+            .Ejemplos img:hover{
+                opacity: 0.5;
+            }
+
+            .Ejemplos img{
+                cursor: pointer;
+            }
+
+            .Gracias {
+                margin: 25px;
+                padding: 25px;
+            }
+            
+            .Gracias h1{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .Gracias h3{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .Gracias img{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .Ask {
+                position: fixed;
+                bottom: 15px;
+                right: 15px;
+                cursor: pointer;
+            }
+
+            .Ask img:hover{
+                opacity: 0.5;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="Navbar">
+            <img src="soda.png" alt="Soda" width="75" height="75">
+            <h2>FAQ</h2>
+            <h2>Explore creators</h2>
+            <button type="button">Log in</button>
+            <button type="button">Sign up</button>
+        </div>
+        <div class="Landing">
+            <h1>Un buen creador vale más que mil seguidores.</h1>
+            <h4>Acepta donaciones, comienza una membresía, vende lo que quieras. Es más fácil de lo que piensas.</h4>
+        </div>
+        <div class="Inscripcion">
+            <h2>buymeasoda.com/tunombre</h2>
+            <h3>Comenzar mi página</h3>
+            <h5>Es gratis y toma menos de 5 minutos.</h5>
+        </div>
+        <div class="Categorias">
+            <h3>Creadores de video</h3>
+            <h3>Artistas</h3>
+            <h3>Escritores</h3>
+            <h3>Músicos</h3>
+            <h3>Desarrolladores</h3>
+            <h3>Gaming</h3>
+            <h3>Podcast</h3>
+            <h3>Comunidades</h3>
+        </div>
+        <div class="Ejemplos">
+            <div class="Ejemplo1">
+                <img src="diego.png" alt="Diego" width="235" height="235">
+                <h3>Diego es un artista visual creando producciones multimedia.</h3>
+                <h5>13,500 seguidores</h5>
+            </div>
+            <div class="Ejemplo2">
+                <img src="diego2.jpg" alt="Diego2" width="235" height="235">
+                <h3>Diego es un artista musical creando producciones audiovisuales.</h3>
+                <h5>98,200 seguidores</h5>
+            </div>
+            <div class="Ejemplo3">
+                <img src="diego3.jpg" alt="Diego3" width="235" height="235">
+                <h3>Diego es un artista de cine creando filmes a nivel internacional.</h3>
+                <h5>32,500 seguidores</h5>
+            </div>
+            <div class="Ejemplo4">
+                <img src="diego4.png" alt="Diego4" width="235" height="235">
+                <h3>Diego es un escritor de ciencia ficcion realizando dialogos a nivel global.</h3>
+                <h5>1,200 seguidores</h5>
+            </div>
+        </div>
+        <div class="Gracias">
+            <h1>Dale a tu audiencia una nueva forma de dar las gracias.</h1>
+            <h3>Buy Me a Soda es una plataforma que hace que las comunidades de expertiz se puedan comunicar de manera flexible y viable.</h3>
+            <img src="support1.png" alt="Gracias" width="55%" height="55%">
+        </div>
+        <div class="Membresias">
+            <h1>Planes mensuales para tus mejores fans.</h1>
+            <h3>Gana un salario recurrente cada mes que tus fans se inscriban a una membresia mensual o anual. Comparte contenido exclusivo y demas.</h3>
+            <img src="membresias.png" alt="Membresias" width="55%" height="55%">
+        </div>
+        <div class="Extras">
+            <h1>Introduciendo los Extras</h1>
+            <h3>La manera mas creativa y flexible de vender contenido digital adicional, o asesorias hacia tus fans.</h3>
+            <img src="extras.jpg" alt="Extras">
+        </div>
+        <div class="Pasos">
+            <h1>Desarrollado para creadores, no para negocios.</h1>
+            <h1>1</h1>
+            <h3>No los llamamos clientes o transacciones, son tus fans.</h3>
+            <h1>2</h1>
+            <h3>Recibe tus pagos instantaneamente a tu cuenta de banco, no más esperas de 30 días.</h3>
+            <h1>3</h1>
+            <h3>Tienes el control absoluto de tu cuenta, nosotros no tocamos nada.</h3>
+            <h1>4</h1>
+            <h3>Te comunicarás con un ser humano para recibir asistencia, nada de mensajes automatizados.</h3>
+            <button type="button">Comienza tu página gratuita</button>
+            <h4>Es gratis, y toma menos de un minuto.</h4>
+        </div>
+        <div class="Ask">
+            <img src="questionmark.png" alt="Pregunta" width="55" height="55">
+        </div>
+    </body>
+    <footer>
+        <div class="Terminos">
+            <h2>Acerca de</h2>
+            <h2>Sporte</h2>
+            <h2>Apps</h2>
+            <h2>Recursos</h2>
+            <h2>Privacidad</h2>
+            <h2>Terminos</h2>
+        </div>
+        <div class="Sociales">
+            <h2>Buy Me a Soda</h2>
+            <img src="fb.png" alt="facebook" width="55" height="55">
+            <img src="ig.png" alt="instagram" width="55" height="55">
+            <img src="twt.png" alt="twitter" width="55" height="55">
+        </div>
+    </footer>
+</html>
