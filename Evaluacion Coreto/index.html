@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Coreto - Learn, Earn, Repeat to trust blockchain technology!</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+
+        .container{
+            font-weight: bolder;
+        }
+
+        .feedback{
+            width: 145px;
+            height: auto;
+            transform: rotate(270deg);
+            position: sticky;
+            top: 645px;
+            left:2500px;
+            background-color: #db8008;
+            display: block;
+            border-radius: 5px;
+            margin: 0;
+        }
+
+        .feedback:hover{
+            opacity: 0.2;
+            transition: 0.2s;
+            cursor: pointer;
+        }
+
+        .feedback h3{
+            padding: 8px;
+            color: #f3f3f3;
+        }
+
+        #researchis{
+            color: #3131c5;
+            font-weight: bold;
+        }
+
+        .bghero{
+            background-image: url(assets/heroimage.png);
+            background-color: #cccccc;
+            height: auto;
+        }
+
+        .features{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            height: 35vh;
+            padding: 0px 255px 0px 255px;
+            border-bottom: 1px solid #292930;
+        }
+
+        .features img{
+            padding-bottom: 15px;
+            padding-right: 15px;
+        }
+
+        .features p{
+            padding: 0px 18px 0px 0px;
+        }
+
+        #repit{
+            font-weight: bolder;
+            color: #3131c5;
+        }
+
+        #moneit{
+            font-weight: bolder;
+            color: #3131c5;
+        }
+
+        #projectexposureit{
+            font-weight: bolder;
+            color: #3131c5;
+        }
+
+        #levelupit{
+            font-weight: bolder;
+            color: #3131c5;
+        }
+
+        #quickfeatures{
+            margin: 15px 0px 5px 255px;
+            display: flex;
+            height: 3vh;
+        }
+
+        .intro{
+            display: flex;
+            align-items: center;
+            margin-left: 255px;
+            margin-right: 255px;
+            margin-top: 39px;
+            justify-content: space-between;
+        }
+
+        .intro1{
+            font-weight: 900;
+            color: #3131c5;
+        }
+
+        .intro2{
+            padding-right: 255px;
+        }
+
+        .imagesfront{
+            width: fit-content
+        }
+
+        .coreto1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url(assets/panoramabg.jpg);
+            background-color: #cccccc;
+            border-radius: 5px;
+            width: 95%;
+            margin-top: 25px;
+            margin-left: 55px;
+        }
+
+        .coreto1 img{
+            margin-top: auto;
+        }
+
+        .coreto2{
+            display: block;
+            width: min-content;
+            background-color: #53e099;
+            border-radius: 5px;
+            margin-top: 25px;
+            margin-left: 55px;
+        }
+
+        .coreto2 h1{
+            padding: 15px 0px 0px 15px;
+            color: #1a6d44;
+            font-weight: bolder;
+        }
+
+        .coreto2 p{
+            padding: 15px 0px 0px 15px;
+            font-weight: bolder;
+        }
+
+        .coreto2y3{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: auto;
+            height: auto;
+        }
+
+        .coreto3{
+            display: block;
+            width: min-content;
+            background-color: #a5daf3;
+            text-align: end;
+            border-radius: 5px;
+            margin-top: 25px;
+            margin-right: 55px;
+        }
+
+        .coreto3 h1{
+            padding: 15px 15px 0px 0px;
+            color: #264baf;
+            font-weight: bolder;
+        }
+
+        .coreto3 p{
+            padding: 15px 15px 0px 0px;
+            font-weight: bolder;
+        }
+
+        .coreto4{
+            display: block;
+            width: min-content;
+            background-color: #eeeeee;
+            text-align:start;
+            border-radius: 5px;
+            margin-top: 25px;
+            margin-right: 55px;
+        }
+
+        .coreto4 h1{
+            padding: 15px 0px 0px 15px;
+            color: #264baf;
+            font-weight: bolder;
+        }
+
+        .coreto4 p{
+            padding: 15px 0px 0px 15px;
+            font-weight: bolder;
+        }
+
+        .coreto5{
+            display: block;
+            width: min-content;
+            background-color: #f2f3c7;
+            text-align: end;
+            border-radius: 5px;
+            margin-top: 25px;
+            margin-right: 55px;
+        }
+
+        .coreto5 h1{
+            padding: 15px 15px 0px 0px;
+            color: #d6a315;
+            font-weight: bolder;
+        }
+
+        .coreto5 p{
+            padding: 15px 15px 0px 0px;
+            font-weight: bolder;
+        }
+
+        .coreto4y5{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: auto;
+            height: auto;        
+        }
+
+        #subtexto{
+            color: #a5a5a5;
+            font-weight: bold;
+            padding: 25px;
+            margin-left: 30px;
+        }
+
+        .maincontent{
+            background-color: #131b46;
+            width: auto;
+            display: block;
+            align-items: center;
+            column-count: 2;
+        }
+
+        .content1{
+            margin-top: 25px;
+            margin-left: 55px;
+            padding: 25px;
+        }
+
+        .content1 img{
+            padding: 15px;
+            margin: 5px;
+        }
+
+        .content1 h3 img{
+            display: block;
+            justify-content: space-between;
+        }
+
+        .content1, h3 + h1{
+            color: #e7e7e7;
+            font-weight: bold;
+        }
+
+        .content1 p{
+            color: #c9c9c9;
+        }
+
+        .content1 button{
+            background-color: #515368;
+            color: #cccccc;
+        }
+
+        .content1imagen{
+            padding: 25px;
+            margin-right: 25px;
+            max-width: 100%;
+            height: auto;
+            display: block;
+            align-items: end;
+            background-image: url(assets/bgcontent1.jpg)
+        }
+
+        #coretoisfor{
+            background-color: #0b2845;
+            color: #eeeeee;
+            font-weight: bolder ;
+            margin: 0;
+            padding: 15px 15px 15px 85px;
+        }
+
+        .investbuttons{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 35px;
+        }
+
+        .investbuttons button{
+            border: 2px solid rgb(202, 202, 202);
+            border-radius: 8px;
+            background-color: #2741d3;
+            color: #eeeeee;
+            font-weight: bold;
+            padding: 0px 25px 0px 25px;
+            margin: 0px 25px 0px 25px;
+            width: 285px;
+            height: 75px;
+        }
+
+        button:hover{
+            opacity: 0.2;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .investors{
+            background-color: #0b2845;
+            color: #cccccc;
+        }
+        
+        .investors h3{
+            font-size: smaller;
+        }
+
+        .investors img{
+            display: block;
+            align-items: center;
+            
+        }
+
+        .knowledge{
+            display: flex;
+            padding: 25px;
+            justify-content: space-evenly;
+        }
+
+        .knowledge1{
+            background-image: url(assets/bginvestors.jpg);
+            border-radius: 8px;
+            margin-left: 55px;
+        }
+
+        #opinionstatus{
+            padding: 15px;
+        }
+
+        #roadmap{
+            padding-left: 55px;
+            padding-top: 15px;
+            display: flex;
+            background-color: #0b2845;
+            color: #eeeeee;
+            margin: 0;
+        }
+
+        hr{
+            margin: 0;
+            padding: 0;
+        }
+
+        .cards{
+            padding: 25px 0px 25px 275px;
+            align-items: center;
+            background-color: #0b2845;
+            color: #e0e0e0;
+        }
+
+        .cardsset1{
+            display: flex;
+        }
+
+        .cardsset2{
+            display: flex;
+        }
+
+        .card1{
+            background-color:#344468;
+            border-radius: 3px;
+            display: block;
+            width: 386px;
+            height: 416px;
+            padding: 15px;
+            margin: 10px;
+        }
+
+        .card1 h3,h5{
+            text-align: center;
+            justify-content: center;
+        }
+
+        .card2{
+            background-color:#344468;
+            border-radius: 3px;
+            display: block;
+            width: 386px;
+            height: 416px;
+            padding: 15px;
+            margin: 10px;
+            text-align:start;
+        }
+
+        .card2 h3,h5{
+            text-align: center;
+            justify-content: center;
+        }
+
+        .card3{
+            background-color:#344468;
+            border-radius: 3px;
+            display: block;
+            width: 386px;
+            height: 416px;
+            padding: 15px;
+            margin: 10px;
+            text-align:start;
+        }
+
+        .card3 h3,h5{
+            text-align: center;
+            justify-content: center;
+        }
+
+        .card4{
+            background-color:#344468;
+            border-radius: 3px;
+            display: block;
+            width: 386px;
+            height: 416px;
+            padding: 15px;
+            margin: 10px;
+            text-align:start;
+        }
+
+        .card4 h3,h5{
+            text-align: center;
+            justify-content: center;
+        }
+
+        .card5{
+            background-color:#344468;
+            border-radius: 3px;
+            display: block;
+            width: 386px;
+            height: 416px;
+            padding: 15px;
+            margin: 10px;
+            text-align:start;
+        }
+
+        .card5 h3,h5{
+            text-align: center;
+            justify-content: center;
+        }
+
+        .card6{
+            background-color:#344468;
+            border-radius: 3px;
+            display: block;
+            width: 386px;
+            height: 416px;
+            padding: 15px;
+            margin: 10px;
+            text-align:start;
+        }
+
+        .card6 h3,h5{
+            text-align: center;
+            justify-content: center;
+        }
+
+        #datespublished{
+            background-color: #0b2845;
+            color: white;
+            margin: 0;
+            padding: 15px;
+            font-size: 100%;
+        }
+
+        #h1news{
+            background-color: #0b2845;
+            color: white;
+            margin: 0;
+            padding: 15px;
+        }
+
+        .news{
+            background-color: #0b2845;
+            display: flex;
+            justify-content: center;
+        }
+
+        .newsletter{
+            align-items: center;
+            text-align: center;
+            background-image: url(assets/newsletterbg.jpg);
+            color: white;
+            padding: 45px;
+        }
+
+        .newsletter input{
+            width: 355px;
+        }
+
+        .inputybutton{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .inputybutton button{
+            margin: 5px;
+            padding: 15px;
+            border-style: none;
+            background-color: whitesmoke;
+            color: #2741d3;
+            border-radius: 4px;
+            width: 155px;
+            height: 55px;
+        }
+
+        .continue{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            text-align: center;
+            background-color: #0b2845;
+            padding: 35px;
+        }
+
+        .continue h1{
+            color: white;
+        }
+
+        .continue button{
+            margin: 5px;
+            padding: 15px;
+            border-style: none;
+            background-color: whitesmoke;
+            color: #2741d3;
+            border-radius: 4px;
+            width: 155px;
+            height: 55px;
+        }
+
+        footer{
+            background-color:#0b2845;
+            color: #ebebeb;
+            column-count: 4;
+            padding: 25px;
+        }
+
+        .finalbutton{
+            background-color: #131b46;
+            padding-left: 25px;
+            padding-bottom: 15px;
+        }
+
+        #createaccount{
+            background-color: #2741d3;
+            color: #e0e0e0;
+            border-radius: 2px;
+            padding: 5px;
+            border: none;
+            text-align: center;
+            display: inline-block;
+        }
+
+        #createaccount:hover{
+            opacity: 55%;
+        }
+
+      
+    </style>
+
+</head>
+<body>
+
+    <div class="feedback">
+        <h3>Feedback</h3>
+    </div>
+
+    <div class="container">
+        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+          <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+            <img  src="assets/logoyes.svg" height="51" width="131"></img>
+          </a>
+    
+          <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
+            <li><a href="#" class="nav-link px-2 link-dark">Features</a></li>
+            <li><a href="#" class="nav-link px-2 link-dark">Token</a></li>
+            <li><a href="#" class="nav-link px-2 link-dark">About</a></li>
+            <li><a href="#" class="nav-link px-2 link-dark">Resources</a></li>
+          </ul>
+    
+          <div class="col-md-3 text-end">
+            <button type="button" class="btn btn-primary">Sign-up</button>
+          </div>
+        </header>
+      </div>
+      <div class="bghero">
+      <div class="px-4 py-5 my-5 text-center">
+        <h1 class="display-5 fw-bold">Intuition is good <br><h1 id="researchis"> Research is even better</h1></h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">The benchmark of Trust & Performance in the crypto space.</p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Get Started</button>
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4">One Pager</button>
+          </div>
+        </div>
+      </div>
+      </div>
+      <h1 id="quickfeatures">Quick Features</h1>
+      <div class="features">
+          <div class="reputation">
+              <img src="assets/reputation.png" alt="reputation">
+              <p id="repit">Reputation</p>
+              <p>A bold differentiator: Using blockchain technology and ML for building a safer crypto ecosystem.</p>
+          </div>
+          <div class="monetization">
+            <img src="assets/monetization.png" alt="monetization">
+            <p id="moneit">Monetization</p>
+            <p>A complete stream of income: everything you need to create, grow and monetize.</p>
+        </div>
+        <div class="projectexposure">
+            <img src="assets/projectexposure.png" alt="projectexposure">
+            <p id="projectexposureit">Project Exposure</p>
+            <p>The ultimate tool for crypto projects to build their brand awareness and community.</p>
+        </div>
+        <div class="levelup">
+            <img src="assets/levelup.png" alt="levelup">
+            <p id="levelupit">Level Up</p>
+            <p>Feel the thrill of our gamification mechanisms while also creating quality content.</p>
+        </div>
+      </div>
+    <div class="intro">
+        <div class="intro1">
+            <h1 id="introducing">Introducing the<br> Coreto Platform</h1>
+        </div>
+        <div class="intro2">
+            <p>All the tools & resources you need to navigate,<br> learn, grow and earn in the crypto space.</p>
+            <button type="button" class="btn btn-primary">Explainer</button>
+        </div>
+    </div>
+    <div class="imagesfront">
+        <div class="coreto1">
+            <img id="coreto1" src="assets/coreto1.png" alt="coreto1" width="1078" height="480">
+        </div>
+        <div class="coreto2y3">
+            <div class="coreto2">
+                <h1>Rise to the challenge!</h1>
+                <p>Reach the top in the most trustable leaderboard.</p>
+                <img id="coreto2" src="assets/coreto2.png" alt="coreto2">
+            </div>
+            <div class="coreto3">
+                <h1>Metrics are a trader's best friend.</h1>
+                <p>Quickly assess the status of an opinion and <br> how the community perceives it.</p>
+                <img id="coreto3" src="assets/coreto3.png" alt="coreto3">
+            </div>
+        </div>
+        <div class="coreto4y5">
+            <div class="coreto4">
+                <h1>Game On!</h1>
+                <p>We have the perfect setup to challenge<br>the opinion of others. Are you a better trader?</p>
+                <img id="coreto4" src="assets/coreto4.png" alt="coreto4">
+            </div>
+            <div class="coreto5">
+                <h1>Claim your official page!</h1>
+                <p>Use our tools to build up your community,<br>reputation, and social engagement.</p>
+                <img id="coreto5" src="assets/coreto5.png" alt="coreto5">
+            </div>
+        </div>
+        <h5 id="subtexto">*The actual platform features might look different in the Final release.</h5>
+    </div>
+
+    <hr>
+
+    <div class="maincontent">
+        <div class="content1">
+            <img src="assets/maincontenticono1.png" alt="icono">
+            <h3>Community Fuel</h3>
+            <h1>One Token, multiple use cases</h1>
+            <p>A dedicated currency for all the platform's services and <br>
+            interactions. The COR token ensures the optimal <br>
+            functioning of our ecosystem.</p>
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4">About $COR</button>
+        <div class="content1imagen">
+            <img src="assets/maincontent1.png" alt="tokensupply" width="65%" height="auto">
+        </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <h1 id="coretoisfor">Coreto is for everyone</h1>
+
+    <div class="investors">
+        <div class="investbuttons">
+            <button id="investors" type="button">Investors</button>
+            <button id="creators" type="button">Creators</button>
+            <button id="projectteams" type="button">Project Teams</button>
+        </div>
+        <div class="knowledge">
+            <div class="knowledge1">
+                <img id="opinionstatus" src="assets/opinionstatus.png" alt="status">            
+            </div>
+            <div class="knowledge2">
+                <h2>Increase <br> your knowledge</h2>
+                <ul>
+                    <li>pledge $COR in the right SOOP (opinion<br> pools) and share the rewards with the<br> creator.</li>
+                    <li>apply your learnings and take the right<br> investment decisions.</li>
+                    <li>explore the research hub for better<br>-informed decisions.</li>
+                    <li>learn first in order to earn later<br> (learn.earn.repeat).</li>
+                    <li>quickly evaluate traders and projects.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+        <h1 id="roadmap">Roadmap</h1>
+
+    <div class="cards">
+        
+    <div class="cardsset1">
+        <div class="card1">
+            <h3>Phase I</h3>
+            <h5>Completed</h5>
+            <p>Features</p>
+            <ul>
+                <li>Alpha Concept & Design</li>
+                <li>Token Generation Event</li>
+                <li>Closed Alpha Platform Launch</li>
+                <li>Staking of Opinion Pools</li>
+                <li>Initial Testing</li>
+            </ul>
+        </div>
+        <div class="card2">
+            <h3>Phase II</h3>
+            <h5>In Progress</h5>
+            <p>Features</p>
+            <ul>
+                <li>Social Posts</li>
+                <li>Commenting & Notification Systems</li>
+                <li>Article Publishing</li>
+                <li>Activate COR token drop</li>
+                <li>Referral program</li>
+                <li>SOOP Statistics</li>
+                <li>Performance System Upgrade</li>
+            </ul>
+        </div>
+        <div class="card3">
+            <h3>Phase III</h3>
+            <h5>2022</h5>
+            <p>Features</p>
+            <ul>
+                <li>Projects Module V1</li>
+                <li>Project Reviews</li>
+                <li>Mobile & Responsive Optimisations</li>
+                <li>Performance Improvements</li>
+                <li>Public Sharable content </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="cardsset2">
+        <div class="card4">
+            <h3>Phase IV</h3>
+            <h5>2022</h5>
+            <p>Features</p>
+            <ul>
+                <li>Projects Module V2</li>
+                <li>Content Monetization</li>
+                <li>Extended WEB3/Decentralisation</li>
+                <li>API/Oracle Data Feeds</li>
+                <li>Gamification System</li>
+            </ul>
+        </div>
+        <div class="card5">
+            <h3>Phase V</h3>
+            <h5>2022</h5>
+            <p>Features</p>
+            <ul>
+                <li>Rumor Stack</li>
+                <li>Internal Staking System</li>
+                <li>Live Messaging</li>
+                <li>1 on 1 Mentoring</li>
+            </ul>
+        </div>
+        <div class="card6">
+            <h3>Official Launch</h3>
+            <h5>2022</h5>
+            <p>Features</p>
+            <ul>
+                <li>Machine Learning & AI</li>
+                <li>NFTs</li>
+            </ul>
+        </div>
+    </div>
+    </div>
+
+    <h3 id="datespublished">*Dates published are tentative only. Roadmap will continuously change as we progress with our project.</h3>
+        
+    <hr>
+
+    <h1 id="h1news">In the news</h1>
+
+    <div class="news">  
+        <img src="assets/inthenews.jpg" alt="news">
+    </div>
+
+<div class="newsletter">
+    <h1>Subscribe to get updates</h1>
+    <h3>Stay up to date with Coreto's development progress.</h3>
+    <div class="inputybutton">
+        <input class="form-control form-control-lg" type="text" placeholder="E-mail address"> 
+        <button id="submit" type="button">Submit!</button>
+    </div>
+    <h3> By clicking on "Submit", you agree to our Privacy's Policy</h3>
+    <h4>Be the first to know, Unsubscribe anytime</h4>
+</div>
+
+<hr>
+
+<div class="continue">
+    <h1>Looking to continue your research?</h1>
+    <button id="continuebutton" type="button">Platform</button>
+</div>
+
+<hr>
+
+<footer>
+    <p>Twitter</p>
+    <p>Telegram</p>
+    <p>LinkedIn</p>
+    <p>Reddit</p>
+    <h3>Coreto</h3>
+    <p>Platform</p>
+    <p>Token</p>
+    <p>Staking</p>
+    <h3>Company</h3>
+    <p>About</p>
+    <p>Info Center</p>
+    <p>Careers</p>
+    <h3>Legal</h3>
+    <p>Privacy Policy</p>
+    <p>Terms & Conditions</p>
+</footer>
+
+<div class="finalbutton">
+    <button id="createaccount" type="button">Create an account</button>
+</div>
+	
+</body>
+</html>
