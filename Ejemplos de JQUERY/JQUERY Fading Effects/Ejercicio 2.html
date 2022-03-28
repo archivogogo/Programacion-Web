@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Ejercicio 2</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<style>
+    p{
+        padding: 15px;
+        background: #b5c270;
+    }
+</style>
+<script>
+$(document).ready(function(){
+    // Fading out displayed paragraphs with different speeds
+    $(".out-btn").click(function(){
+        $("p.normal").fadeOut();
+        $("p.fast").fadeOut("fast");
+        $("p.slow").fadeOut("slow");
+        $("p.very-fast").fadeOut(50);
+        $("p.very-slow").fadeOut(2000);
+    });
+    
+    // Fading in hidden paragraphs with different speeds
+    $(".in-btn").hover(function(){
+        $("p.normal").fadeIn();
+        $("p.fast").fadeIn("fast");
+        $("p.slow").fadeIn("slow");
+        $("p.very-fast").fadeIn(50);
+        $("p.very-slow").fadeIn(2000);
+    });
+});
+</script>
+</head>
+<body>
+    <button type="button" class="out-btn">Desvanecer resultados</button>
+    <button type="button" class="in-btn">Mostrar resultados</button>
+    <p class="very-fast">El ganador del premio Oscar fué DUNE (Efectos Especiales).</p>
+    <p class="normal">El ganador del premio Oscar fué DUNE (Direccion de Sonido).</p>
+    <p class="fast">El ganador del premio Oscar fué DUNE. (Direccion de Produccion)</p>
+    <p class="slow">El ganador del premio Oscar fué DUNE. (Direccion de Soundtrack)</p>
+    <p class="very-slow">El ganador del premio Oscar fué DUNE. (Mejor pelicula, aunque no gano)</p>
+</body>
+</html>      
