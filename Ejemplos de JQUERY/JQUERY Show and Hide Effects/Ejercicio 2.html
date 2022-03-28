@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Ejercicio 2</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<style>
+    p{
+        padding: 15px;
+        background: #2885aa;
+        margin: 25px;
+    }
+</style>
+<script>
+$(document).ready(function(){
+    // Hide displayed paragraphs with different speeds
+    $(".hide-btn").click(function(){
+        $("p.normal").hide();
+        $("p.fast").hide("fast");
+        $("p.slow").hide("slow");
+        $("p.very-fast").hide(50);
+        $("p.very-slow").hide(2000);
+    });
+    
+    // Show hidden paragraphs with different speeds
+    $(".show-btn").click(function(){
+        $("p.normal").show();
+        $("p.fast").show("fast");
+        $("p.slow").show("slow");
+        $("p.very-fast").show(50);
+        $("p.very-slow").show(2000);
+    });
+});
+</script>
+</head>
+<body>
+    <button type="button" class="hide-btn">Ocultar ganadores</button> 
+    <button type="button" class="show-btn">Mostrar ganadores</button>
+    <p class="very-fast">La velocidad de este parrafo esta relacionado con la posición del atleta ganador: Joe Smith</p>
+    <p class="normal">La velocidad de este parrafo esta relacionado con la posición del atleta ganador: Johnny Falcon</p>
+    <p class="fast">La velocidad de este parrafo esta relacionado con la posición del atleta ganador: Albert Wesker</p>
+    <p class="slow">La velocidad de este parrafo esta relacionado con la posición del atleta ganador: Mario Alberto</p>
+    <p class="very-slow">La velocidad de este parrafo esta relacionado con la posición del atleta ganador: Yoshimura Hokaido</p>
+</body>
+</html>

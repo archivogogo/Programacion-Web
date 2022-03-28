@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Ejercicio 9</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<style>
+    p{
+        padding: 10px;
+        background: rgb(201, 202, 118);
+        display: none;
+    }
+    div{
+        margin: 20px 0;
+    }
+</style>
+<script>
+$(document).ready(function(){
+    var i = 0;
+    $('input[type="text"]').keyup(function(){
+        $("span").text(i += 1);
+        $("p").show().fadeIn();
+    });
+});
+</script>
+</head>
+<body>
+    <input type="text">
+    <div>Tecla soltada: <span>0</span> veces</div>
+	<div><strong>Aviso:</strong> Teclea algo en el area de input superior.</div>
+    <p>ALERTA: Una tecla fue soltada.</p>
+</body>
+</html>

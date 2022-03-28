@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Ejercicio 6</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+</head>
+<body>
+    <button type="button" class="btn-one">Ver texto alterno</button>
+    <button type="button" class="btn-two">Ver texto alterno 2</button>
+    <button type="button" class="btn-three">Ver texto alterno 3</button>
+    <p>Parrafo de prueba</p>
+    <p>Parrafo de prueba #2</p>
+    <p class="empty"></p>
+
+    <script>
+        $(document).ready(function(){
+            $(".btn-one").click(function(){
+                $("p").text("Prueba de funcionamiento 1");
+            });
+            $(".btn-two").click(function(){
+                $("p:first").text("Prueba de funcionamiento 2");
+            });
+            $(".btn-three").click(function(){
+                $("p.empty").text("Prueba de funcionamiento 3");
+            });
+        });
+    </script>
+
+</body>
+</html>

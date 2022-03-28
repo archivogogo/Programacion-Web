@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Ejericio 6</title>
+<style>
+    
+    *{
+        padding: 5px;
+    }  
+
+</style>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Nombre</th>
+                <th>Correo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Diego Medina</td>
+                <td>diego@mail.com</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Diego Rodriguez</td>
+                <td>diegogo@mail.com</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Diego Alex</td>
+                <td>diegoalex@mail.com</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>Este parrafo ira en naranja.</p>
+    <p>Este parrafo no tendra cambio.</p>
+    <p>Este parrafo ira en azul.</p>
+    <form>
+        <label>Nombre: <input type="text"></label>
+        <label>Contraseña: <input type="password"></label>
+        <input type="submit" value="Acceder">
+    </form>
+
+    <script>
+        $(document).ready(function(){
+            // Highlight table rows appearing at odd places
+            $("tr:odd").css("background", "cyan");
+          
+            // Highlight table rows appearing at even places
+            $("tr:even").css("background", "red");
+          
+            // Highlight first paragraph element
+            $("p:first").css("background", "orange");
+          
+            // Highlight last paragraph element
+            $("p:last").css("background", "blue");
+          
+            // Highlight all input elements with type text inside a form
+            $("form :text").css("background", "cyan");
+          
+            // Highlight all input elements with type password inside a form
+            $("form :password").css("background", "yellow");
+          
+            // Highlight all input elements with type submit inside a form
+            $("form :submit").css("background", "pink");
+        });
+        </script>
+
+</body>
+</html>

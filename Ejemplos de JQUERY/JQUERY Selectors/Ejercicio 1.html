@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>jQuery Select Element by ID</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+ 
+</head>
+<body>
+    <p id="mark">Texto a cambiar</p>
+    <p>NO cambiar este texto.</p>
+    <p>TAMPOCO este.</p>
+    <p><strong>Note:</strong> The value of the id attribute must be unique in an HTML document.</p>
+
+    <script>
+        $(document).ready(function(){
+            // Highlight element with id mark
+            $("#mark").css("background", "purple");
+        });
+    </script>
+
+</body>
+</html>

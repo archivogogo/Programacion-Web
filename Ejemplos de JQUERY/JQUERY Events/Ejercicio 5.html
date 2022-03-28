@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Ejercicio 5</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<style>
+    p{
+        padding: 20px;
+        font: 20px sans-serif;
+        background: #f2f2f2;
+    }
+    p.highlight{
+        background: rgb(49, 206, 115);
+    }
+</style>
+<script>
+$(document).ready(function(){
+    $("p").mouseenter(function(){
+        $(this).addClass("highlight");
+    });
+    $("p").mouseleave(function(){
+        $(this).removeClass("highlight");
+    });
+});
+</script>
+</head>
+<body>
+    <p>Coloca el mouse sobre mi.</p>
+    <p>Coloca el mouse sobre mi.</p>
+    <p>Coloca el mouse sobre mi.</p>
+</body>
+</html>

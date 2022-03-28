@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Ejercicio 3</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<style>
+    p{
+        padding: 15px;
+        background: #35cc74;
+        margin: 25px;
+        border-radius: 6px;
+    }
+
+    button{
+        background-color: #35cc74;
+        color: antiquewhite;
+        font-weight: bolder;
+        border-radius: 6px;
+        margin: 15px;
+        padding: 15px;
+        border-style: none;
+    }
+</style>
+<script>
+$(document).ready(function(){
+    // Toggles paragraphs display
+    $(".toggle-btn").click(function(){
+        $("p").toggle();
+    });
+});
+</script>
+</head>
+<body>
+    <button type="button" class="toggle-btn">Mostrar/Ocultar Calificación</button> 
+    <p>Sacaste 9.2 en Matematicas</p>
+    <p>Sacaste 8.9 en Literatura</p>
+</body>
+</html>   

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Ejercicio 4</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<style>
+    p{
+        padding: 15px;
+        background: #e76ab3;
+    }
+</style>
+<script>
+$(document).ready(function(){
+    // Toggles paragraphs with different speeds
+    $(".toggle-btn").click(function(){
+        $("p.normal").toggle();
+        $("p.fast").toggle("fast");
+        $("p.slow").toggle("slow");
+        $("p.very-fast").toggle(50);
+        $("p.very-slow").toggle(2000);
+    });
+});
+</script>
+</head>
+<body>
+    <button type="button" class="toggle-btn">Mostrar/Ocultar Resultados </button>
+    <p class="very-fast">Tus hormonas se encuentran estables.</p>
+    <p class="normal">No tienes deficiencia en vitaminas.</p>
+    <p class="fast">Tienes un 5% de deficiencia en minerales.</p>
+    <p class="slow">Tu masa corporal esta en correcto estado.</p>
+    <p class="very-slow">Sufres de ligera presion arterial.</p>
+</body>
+</html>     

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Ejercicio 8</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<style>
+    p{
+        padding: 10px;
+        background: lightgreen;
+        display: none;
+    }
+    div{
+        margin: 20px 0;
+    }
+</style>
+<script>
+$(document).ready(function(){
+    var i = 0;
+    $('input[type="text"]').keydown(function(){
+        $("span").text(i += 1);
+        $("p").show().fadeOut();
+    });
+});
+</script>
+</head>
+<body>
+    <input type="text">
+    <div>Teclas presionadas: <span>0</span> veces</div>
+	<div><strong>Note:</strong> Introduce un texto en el area superior, keydown se diferencia de keypress porque considera todas las teclas del teclado.</div>
+    <p>ALERTA: Una tecla fue presionada.</p>
+</body>
+</html>
