@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación Parcial A - Formulario</title>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script defer src="script.js"></script>
+
+    <style>
+        body{
+            background-color: rgb(211, 97, 97);
+            color: antiquewhite;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bolder;
+            height: min-content;
+            width: min-content;
+        }
+
+        .container-1{
+            background-color: blanchedalmond;
+            border-radius: 8px;
+            color: rgb(61, 12, 12);
+            padding: 8px;
+        }
+
+        input{
+            padding: 5px;
+            margin: 5px;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div id="error"> </div>
+
+    <h3>Bienvenido al Portal de Ingreso de Datos</h3>
+
+    <div class="container">
+        <form id="form" method="post" action="" name="form">
+            <label for="nombre">Nombre de usuario</label>
+            <br>
+            <input id='nombre 'type="text" name="nombre" value="" required minlength="2" maxlength="36"> <br>
+            <label for="email">Correo electrónico</label>
+            <br>
+            <input id='email' type="email" name="email" value="" required> <br>
+            <label for="age">Edad</label>
+            <br>
+            <input id='age' type="number" name="age" value="Edad" required min="0" max="120"> <br>
+            <label for="gender">Sexo</label>
+            <br>
+            <input id="male" type="radio" name="gender" value="Masculino"> Masculino <br> <input id="female" type="radio" name="gender" value="Female"> Femenino <br>
+            <label for="number">Número telefónico</label><br>
+            <input id="number" type="text" name="number" value="" required minlength="12" maxlength="12"> <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+
+</body>
+</html>
