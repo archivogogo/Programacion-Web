@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+}
+
+#main-perfil1{
+    align-items: center;
+    width: 950px;
+    margin: auto;
+    position: relative;
+    left: 300px;
+}
+
+#backtoHome a{
+    text-align: center;
+    color:antiquewhite;
+}
+
+#childrenMain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    margin: 26px;
+}
+
+.card-img-top:hover{
+    opacity: 70%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#vaccinesMain{
+    align-items: center;
+    justify-content: center;
+}
+
+.titlesVaccines{
+    margin: 16px;
+}
+
+.addChild{
+    display: relative;
+    left: 800px;
+    align-items: center;
+    text-align: center;
+}
+
+#vaccines{
+    box-shadow: 10px 10px 25px rgb(180, 180, 180);
+}
